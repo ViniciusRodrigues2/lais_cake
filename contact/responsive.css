@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+@media screen and (max-width:480px) {
+    .rodape{
+        justify-content: center;
+        flex-direction: column;
+        height: 15vh;
+    }
+    .rodape p{
+        padding: 15px;
+    }
+    .rodape .uls{
+        padding: 10px;
+    }
+    .rodape .uls ul li a{
+        font-size: 1.8em;
+    }
+}
+@media screen and (min-width:780px) {
+    .rodape p{
+        padding: 15px;
+    }
+    .rodape .uls{
+        padding: 10px;
+    }
+    .rodape .uls ul li a{
+        font-size: 1.4em;
+        transition: all .3s ease-in-out;
+    }
+    .rodape .uls ul li a:hover{
+        color: brown;
+    }
+}

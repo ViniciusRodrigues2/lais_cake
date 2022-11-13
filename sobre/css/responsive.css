@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+@media screen and (min-width:750px) {
+    body{
+        position: relative;
+    }
+    .container{
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    .container .back{
+        max-width: 30px;
+        width: 100%;
+        cursor: pointer;
+        margin: 1em 1.3em;
+    }
+    .container .back img{
+        width: 100%;
+    }
+    .container .logo{
+        margin: 1em 0em 1em 0;
+    }
+    .container .logo a{
+        text-decoration: none;
+        font-size: 1.5em;
+        color: #03030e;
+        text-transform: capitalize;
+        font-weight: 200;
+    }
+    .container .name-is-about{
+        margin: 0;
+        margin-right: 0;
+    }
+    .conteudo .content-primary .formacoes{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin: 0 auto;
+    }
+    .conteudo .content-primary{
+       width: 100vw;
+    }
+    .white{
+        background-color: #e4e4e4;
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        top: 85%;
+        right: 50%;
+        left: 37%;
+        border-radius: 100%;
+        z-index: 1;
+    }
+    .conteudo .content-primary .about-is{
+        display: flex;
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 2em 0;
+        gap: 1em;
+        background-color: #ddbbdb;
+        padding: 3em;
+    }
+    .conteudo .content-primary .about-is .image-act{
+        width: 0;
+        flex: 1;
+    }
+    
+    .conteudo .content-primary .about-is .image-act img{
+         object-fit: cover;
+
+    }
+    .conteudo .content-primary .about-is .grid-resposi{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .conteudo .content-primary .about-is .text-container{
+        margin:0;
+        flex: 1;
+        width: 37.5em;
+    }
+    .conteudo .content-primary .text-container p{
+        font-weight: 300;
+        font-size: clamp(1.3em,10vw,1,1em);
+        line-height: 1.5;
+        letter-spacing: 1.1;
+        width:90%;
+        text-align: justify;
+    }
+
+
+
+
+    .conteudo .content-primary .formacoes .icon{
+        margin: 20px 10px 20px 8px;
+        border: 1px solid rgb(221, 187, 219);
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+    }
+    .conteudo .content-primary .formacoes .icon:hover{
+        background-color: transparent;
+        border: 1px solid rgb(165, 185, 185);
+    }
+}
+
+@media screen and (max-width:350px) {
+    .conteudo .content-primary .formacoes{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .conteudo .content-primary .formacoes .icon{
+        flex: 1 1 50px;
+    }
+    .rodape{
+        justify-content: center;
+        flex-direction: column;
+        height: 14vh;
+    }
+    .rodape p{
+        padding-top: 5px;
+    }
+    .rodape .uls{
+        padding: 10px;
+    }
+}

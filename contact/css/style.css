@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+}
+ body{
+     width: 100%;
+     height: 100vh;
+     overflow-x: hidden;
+ }
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 25px #cdcdcd;
+    padding: .85em .75em;
+}
+.container .back{
+    max-width: 30px;
+    width: 100%;
+}
+.container .back img{
+    width:100%;
+}
+
+.assunto-principal{
+    width: 100%;
+}
+.assunto-principal .contacts-info{
+    width: 100%;
+    margin-top: 3em;
+}
+.assunto-principal .contacts-info .content-info{
+    text-align: center;
+    padding: 1em .85em;
+    color: rgb(35, 35, 35);
+}
+.assunto-principal .contacts-info .content-info h2{
+    font-weight: 800;
+    font-size: clamp(1.8em,8vw,1.8em);
+    
+}
+.assunto-principal .contacts-info .content-info-text{
+    text-align: justify;
+    margin: 20px;
+}
+.assunto-principal .contato-tainer{
+    background-color: #ddbbdb;
+    width: 100%;
+}
+.assunto-principal .contato-tainer #contacts form{
+    display: grid;
+    margin: 20px;
+    grid-template-columns: repeat(1,1fr);
+}
+.assunto-principal .contato-tainer #contacts form .contact-cards{
+    display: flex;
+    flex-direction: column;
+}
+.assunto-principal .contato-tainer #contacts form .contact-cards label{
+    margin: .85em 0;
+    font-weight: 800;
+    color: rgb(62, 62, 62);
+    letter-spacing: 1.2px;
+}
+.assunto-principal .contato-tainer #contacts form .contact-cards input{
+    padding: .85em .75em;
+    border-radius:4px ;
+    outline: none;
+    border: 1px solid #ccc;
+}
+.assunto-principal .contato-tainer #contacts form .contact-cards .btn{
+    margin: .85em 0;
+    padding: 1em 0;
+    background-color: #82547f;
+    font-size: clamp(1.1em,8vw,1.1em);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+}
+.assunto-principal .contato-tainer #contacts form .contact-cards textarea{
+    margin: .85em 0;
+    outline: none;
+    border: 1px solid #ccc;
+}

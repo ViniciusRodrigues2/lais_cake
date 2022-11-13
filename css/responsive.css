@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+:root{
+    --color-menu: #7c7c7c;
+}
+@media screen and (min-width:700px) {
+    /* zera mobile */
+    .header-container .menu-hollie .menu-action{
+        display: none;
+    }
+    .header-container {
+        width: 100%;
+        margin-top: 1.5em;
+    }
+    .header-container .menu-hollie .menu{
+        position: sticky;
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        opacity: 1;
+        background-color: transparent;
+        list-style: none;
+        margin-right:3.75em;
+    }
+    .header-container .menu-hollie  .menu li:nth-child(1){
+        margin-top: 0%;
+    }
+    .header-container .menu-hollie  .menu li a{
+        display: block;
+        font-size: 1.5em;
+        text-decoration: none;
+        color: var(--color-menu);
+        font-weight: 500;
+        padding: 5px 15px;
+        transition: all .3s ease-in-out;
+        text-transform: capitalize;
+    }
+    .header-container .menu-hollie .menu li:nth-child(4),.header-container .menu-hollie .menu li:nth-child(5),.header-container .menu-hollie .menu li:nth-child(6){
+        display: none;
+    }
+    .header-container .menu-hollie .menu li i{
+        display: none;
+    }
+    /* zerar mobile end */
+
+
+    .video-container .video-desmonter{
+        width: 720px;
+        height: 400px;
+        margin: 10% auto;
+        
+    }
+    /* arrumar menu */
+    .header-container .menu-hollie  .menu li a:hover{
+        background-color: #bf939072;
+    }
+    .header-container .menu-hollie  .menu li:nth-child(3){
+        margin-right: 0;
+    }
+    .header-container .menu-hollie  .menu li a.activo{
+        color: var(--color-menu);
+        padding: 5px 15px;
+    }
+    /* ARRUMAR MENU END */
+    .header-container .logo{
+        padding-left: 60px;
+    }
+    body{
+        overflow-x: hidden;
+    }
+
+    .rodape{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .rodape .uls{
+        display: flex;
+    }
+    .rodape .uls ul{
+        display: flex;
+        list-style: none;
+        gap: 20px;
+    }
+    .rodape .uls ul li a{
+        text-decoration: none;
+        color: black;
+    }
+    .rodape .uls ul li a i{
+        font-size: 1.2em;
+        transition: all .3s ease-in-out;
+    }
+    .rodape .uls ul li a i:hover{
+        color: #BF9390;
+        transform: scale(1.2);
+    }
+
+}
+@media screen and (max-width:350px) {
+    .container-cards{
+       display: flex;
+       flex-wrap: wrap;
+    }
+    .container-cards .card{
+        flex: 100%;
+    }
+    .header-container .logo a{
+        font-size: 6vw;
+    }
+    .rodape{
+        display: flex;
+        flex-direction: column;
+        height: 20vh;
+        align-items: center;
+        justify-content:center;
+    }
+    .rodape .uls ul{
+        display: flex;
+        flex: 1 1 50px;
+    }
+}
